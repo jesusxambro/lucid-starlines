@@ -13,7 +13,7 @@ const CurrentSelection = ({currentCrew, currentShip}) => {
     }
 
   return (
-    <div>
+    <div className={"currentCard"}>
       <h2>Your current ship is: {currentShip.name}</h2>
       {/* Show your current ship's name and fuel count */}
 

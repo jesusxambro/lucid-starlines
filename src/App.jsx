@@ -16,28 +16,21 @@ function App() {
     const [currentCrew, setCurrentCrew] = useState([]);
 
     useEffect(() => {
-
-
         }
         , [])
-
     return (
         <div>
             <h1 className={"header"}>Welcome to Lucid Starlines!</h1>
             <CurrentSelection currentShip={currentShip}
                               currentCrew={currentCrew}
             />
-
             <SpaceshipSection spaceships={spaceships}
                               setCurrentShip={setCurrentShip}
                               currentShip={currentShip}
-
             />
 
             <CrewmemberSection crewmembers={crewmembers}
             />
-
-
         </div>
     )
 }

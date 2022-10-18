@@ -8,6 +8,9 @@
   color: black;
   /*background-color: #242424;*/
   background-image:url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/02/69661/6adb34106beb3500fc654a75e88ffd7c.jpg");
+  background-attachment: fixed;
+  background-position:center top;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

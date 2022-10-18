@@ -60,9 +60,17 @@
   cursor: pointer;
   transition: scale 150ms ease;
   user-select: none;
-  background-color: #EDF7FA;
+  background-color: aliceblue;
   color: #1a1a1a;
   border-radius:12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+.currentCard{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius:12px;
+  background-color: #EDF7FA;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }

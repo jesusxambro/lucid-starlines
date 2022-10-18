@@ -4,38 +4,66 @@
   padding: 2rem;
   text-align: center;
 }
+.header{
+  display: flex;
+  flex-direction: column;
+}
+.crewCard:hover{
+  scale:1.1;
+}
+.crewList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.crewCard{
+  margin: 10px;
+  background-color: #EDF7FA;
+  width: 200px;
+  height: 300px;
+  color:black;
+  cursor: pointer;
+  top: 20vh;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: .75em;
+  transition: all 0.2s ease-in-out;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
+.spaceshipSection{
 
-.read-the-docs {
-  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
 }
+.spaceshipList{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+
+}
+.spaceshipCard:hover{
+  scale:1.1;
+}
+.spaceshipCard{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100px;
+  padding: 3rem;
+  cursor: pointer;
+  transition: scale 150ms ease;
+  user-select: none;
+  background-color: #EDF7FA;
+  color: #1a1a1a;
+  border-radius:12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+

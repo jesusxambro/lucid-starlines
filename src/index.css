@@ -3,10 +3,11 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  height: 100vh;
+  color-scheme: light;
+  color: black;
+  /*background-color: #242424;*/
+  background-image:url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/02/69661/6adb34106beb3500fc654a75e88ffd7c.jpg");
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

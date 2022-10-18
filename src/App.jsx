@@ -1,34 +1,45 @@
-import { useState } from 'react'
+import {useEffect, useState} from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import {crewmembersTest} from "./Test-Data/sample-crew.js";
+import {spaceshipsTest} from "./Test-Data/sample-spaceships.js";
+
+import SpaceshipSection from './Components/Spaceships/SpaceshipSection.jsx'
+import CrewmemberSection from './Components/Crewmembers/CrewmemberSection.jsx';
+import CurrentSelection from './Components/CurrentSelection/CurrentSelection.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    const [spaceships, setSpaceships] = useState(spaceshipsTest);
+    const [crewmembers, setCrewmembers] = useState(crewmembersTest);
+    const [currentShip, setCurrentShip] = useState({});
+    const [currentCrew, setCurrentCrew] = useState([]);
+
+    useEffect(() => {
+
+
+        }
+        , [])
+
+    return (
+        <div>
+            <h1 className={"header"}>Welcome to Lucid Starlines!</h1>
+            <CurrentSelection currentShip={currentShip}
+                              currentCrew={currentCrew}
+            />
+
+            <SpaceshipSection spaceships={spaceships}
+                              setCurrentShip={setCurrentShip}
+                              currentShip={currentShip}
+
+            />
+
+            <CrewmemberSection crewmembers={crewmembers}
+            />
+
+
+        </div>
+    )
 }
 
 export default App
